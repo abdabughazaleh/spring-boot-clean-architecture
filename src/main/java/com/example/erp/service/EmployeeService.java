@@ -9,10 +9,14 @@ import org.springframework.stereotype.Service;
 @Service
 public interface EmployeeService {
     EmployeeRespDTO save(EmployeeReqDTO req);
+
     EmployeeRespDTO saveV11(EmployeeReqDTO req);
+
     String getEmployeeDetailsAsStr(Long id);
-    EmployeeRespDTO update(UpdateEmployeeReqDTO dto);
+
+    EmployeeRespDTO update(UpdateEmployeeReqDTO dto) throws Exception;
 
     void delete(Long id);
+
     EmployeeDTO get(Long id);
 }

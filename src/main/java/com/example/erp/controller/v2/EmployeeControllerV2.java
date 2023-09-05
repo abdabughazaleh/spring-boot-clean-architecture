@@ -30,7 +30,7 @@ public class EmployeeControllerV2 {
     }
 
     @PutMapping(value = "")
-    public EmployeeRespDTO update(@RequestBody UpdateEmployeeReqDTO req) {
+    public EmployeeRespDTO update(@RequestBody UpdateEmployeeReqDTO req) throws Exception {
         return this.employeeService.update(req);
     }
 
